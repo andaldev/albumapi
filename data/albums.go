@@ -1,10 +1,10 @@
 package data
 
 type Album struct {
-	ID           int    `json:"id"`
-	TITLE        string `json:"title"`
-	BAND         string `json:"band"`
-	RELEASE_YEAR int    `json:"release_year"`
+	ID           int
+	TITLE        string
+	BAND         string
+	RELEASE_YEAR int
 }
 
 var albums []Album
