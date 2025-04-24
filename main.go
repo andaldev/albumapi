@@ -1,11 +1,8 @@
 package main
 
-import (
-	"fmt"
-
-	"albumapi/data"
-)
+import "albumapi/api"
 
 func main() {
-	fmt.Println(data.GetAlbum())
+	server := api.NewAPIServer(":8090")
+	server.Run()
 }
